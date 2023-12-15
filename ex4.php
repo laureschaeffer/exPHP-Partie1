@@ -18,7 +18,7 @@ $listInv=strrev($list);
 $conditionVraie = $list == $listInv;
 $conditionFausse = $list!= $listInv;
 
-if ($conditionVraie= True){
+if ($conditionVraie){
     echo "La phrase « $phrase » est un palindrome.";
 } else {
     echo "La phrase « $phrase » n'est pas un palindrome.";
