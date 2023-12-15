@@ -11,3 +11,4 @@ $phrase = "Notre formation DL commence aujourd'hui<br>";
 echo $phrase;
  /* fonction changer dernier mot d'une phrase, manuel php */
  $phrase = str_replace("aujourd'hui", "demain", $phrase);
+echo $phrase;
