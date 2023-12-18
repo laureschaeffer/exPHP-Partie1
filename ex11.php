@@ -13,7 +13,7 @@ $nbMarques = count($marques);
 for ($i = 0; $i < $nbMarques; $i++) { 
     echo $marques[$i]."<br>";
 }
-// ou alors avec foreach 
+// ou alors avec foreach et une liste numerotee
 foreach($marques as $index => $marque) {
     echo ($index+1)." - ".$marque."<br>";
 }
