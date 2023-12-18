@@ -12,11 +12,11 @@ $montantAPAyer=152;
 $montantVerse=200;
 $resteAPayer= $montantVerse-$montantAPAyer;
 
-$billetDe10= floor($resteAPayer/10);
+$billetDe10= intdiv($resteAPayer/10);
 // $billetDe5= floor(($resteAPayer-$billetDe10*10)/5);
-$billetDe5= floor(($resteAPayer % 10)/5);
+$billetDe5= intdiv(($resteAPayer % 10)/5);
 $restePieces= $resteAPayer - ($billetDe10*10 + $billetDe5*5);
-$piecesDe2= floor($restePieces/2);
+$piecesDe2= intdiv($restePieces/2);
 $piecesDe1= $restePieces % 2;
 
 echo "Montant à payer : $montantAPAyer €<br>";
